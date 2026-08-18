@@ -17,12 +17,13 @@ function FilterBar({ activeFilter, onChange }) {
 function ProjectArchiveRow({ project, index }) {
   return (
     <article className="archive-row">
-      <div className="archive-thumb" aria-label="Thumbnail placeholder"><span>{String(index + 1).padStart(2, '0')}</span><small>Image</small></div>
+      <div className={`archive-thumb${project.image ? ' archive-thumb--image' : ''}`} aria-label={project.image ? undefined : 'Thumbnail placeholder'}>
+        {project.image
+          ? <img src={project.image} alt={project.imageAlt || ''} />
+          : <span>{String(index + 1).padStart(2, '0')}</span>}
+      </div>
       <div className="archive-copy">
-        <div>
-          <p className="archive-type">{project.categories.join(' / ')}</p>
-          <h3><a href={project.link}>{project.title}</a></h3>
-        </div>
+        <h3><a href={project.link}>{project.title}</a></h3>
         <p>{project.description}</p>
         <ul className="tags" aria-label="Skills and tools">{project.tools.map((tool) => <li key={tool}>{tool}</li>)}</ul>
       </div>
@@ -38,7 +39,7 @@ function ProjectArchive({ projects }) {
     <section className="archive" id="archive">
       <div className="content-container">
         <div className="archive-heading">
-          <div><p className="eyebrow">More work / assorted formats</p><h2>Everything <em>else</em></h2></div>
+          <h2 className="section-heading">Everything else</h2>
           <FilterBar activeFilter={activeFilter} onChange={setActiveFilter} />
         </div>
         <div className="archive-list" aria-live="polite">

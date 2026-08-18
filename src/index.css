@@ -1,11 +1,11 @@
 :root {
-  --pink: #FDE4EA;
+  --pink: #FFECED;
   --charcoal: #282525;
   --green: #456550;
   --cream: #E1BCD1;
   --burgundy: #7B2359;
-  --content-max: 1000px;
-  --page-gutter: 24px;
+  --content-width: 1050px;
+  --page-gutter: clamp(20px, 4vw, 48px);
   --serif: Georgia, 'Times New Roman', serif;
   --sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: var(--charcoal);

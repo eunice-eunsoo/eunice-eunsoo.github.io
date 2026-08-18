@@ -8,36 +8,23 @@ function ProjectVisual({ project }) {
   }
 
   return (
-    <div className="project-visual" aria-label="Project visual placeholder">
-      <span className="visual-label">Project visual / replace</span>
-      <span className="visual-number">{project.projectNumber}</span>
-      <div className="visual-mark" />
+    <div className="project-visual project-visual--placeholder" aria-label="Project visual placeholder">
+      <span>Project visual</span>
     </div>
   )
 }
 
-function ProjectDetails({ project }) {
+function FeaturedProject({ project }) {
   return (
-    <div className="project-copy">
-      <div className="project-kicker"><span>{project.projectNumber}</span><span>{project.categories.join(' / ')}</span></div>
-      <h2>{project.title}</h2>
-      <p className="project-description">{project.description}</p>
-      <dl className="project-meta">
-        <div><dt>Role</dt><dd>{project.role}</dd></div>
-        <div><dt>Tools / skills</dt><dd>{project.tools.join(', ')}</dd></div>
-      </dl>
-      <a className="text-link" href={project.link}>View project <span aria-hidden="true">↗</span></a>
-    </div>
-  )
-}
-
-function FeaturedProject({ project, layout }) {
-  return (
-    <article className={`featured-project featured-project--${layout}`}>
-      <div className="content-container featured-project-inner">
+    <article className="featured-project">
+      <a className="project-visual-link" href={project.link} aria-label={`View ${project.title}`}>
         <ProjectVisual project={project} />
-        <ProjectDetails project={project} />
-      </div>
+      </a>
+      <h3><a href={project.link}>{project.title}</a></h3>
+      <p className="project-description">{project.description}</p>
+      <ul className="tags" aria-label="Skills and tools">
+        {project.tools.map((tool) => <li key={tool}>{tool}</li>)}
+      </ul>
     </article>
   )
 }
