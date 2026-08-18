@@ -40,7 +40,7 @@ function ProjectArchive({ projects }) {
       <div className="content-container">
         <div className="archive-heading">
           <h2 className="section-heading">Full Menu</h2>
-          <p className='featured-project h3'>Everything else I've been cooking up.</p>
+          <p className='featured-project h3'>Everything else.</p>
           <FilterBar activeFilter={activeFilter} onChange={setActiveFilter} />
         </div>
         <div className="archive-list" aria-live="polite">

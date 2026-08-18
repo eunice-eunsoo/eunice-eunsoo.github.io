@@ -13,11 +13,11 @@ function IntroSection() {
         </div>
 
         <div className="intro-copy">
-          <p className='intro-deck'>Hi! Welcome to my kitchen, where I'm always cooking something up. (Sorry, I had to.)
+          <p className='intro-deck'>Hi! Welcome to my kitchen, where I'm always cooking something up :)
             <br/><br/>
-            Jokes aside, I'm a multimedia journalist interested in all things media, with occasional marketing projects on the side. I'm especially invested in data and interactives journalism, and I love thinking about newsroom products and how people actually experience the news.
+            I'm a multimedia journalist, especially interested in <b>data and interactives journalism.</b> I love thinking about newsroom products and how people actually experience the news. I also have a side gig in marketing and PR.
             <br/><br/>
-            I also just really love stories, whether that means listening to someone tell me theirs or finding one buried in a dataset. And I love making things too, from interactives and videos to whatever random creative idea I decide to try next.</p>
+            I'm drawn to two things: storytelling and buidling creative things. That might mean reporting, building an interactive, producing a video, or trying something completely new!</p>
           <ul className="discipline-list" aria-label="Disciplines">
             {disciplines.map((discipline) => <li key={discipline}>{discipline}</li>)}
           </ul>
