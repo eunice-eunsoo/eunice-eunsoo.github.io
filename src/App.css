@@ -8,6 +8,7 @@
 .intro-copy { max-width: 500px; }
 .intro h1 { margin: 0 0 22px; font: 400 clamp(2.75rem, 5vw, 4.5rem)/1 var(--serif); letter-spacing: -.045em; }
 .intro-deck { max-width: 460px; margin: 0 0 28px; font: 1rem/1.55 var(--serif); }
+.intro-midsize {max-width: 460px; margin: 0 0 28px; font: 2rem/1.55 var(--serif);}
 .discipline-list { display: flex; flex-wrap: wrap; gap: 7px 18px; margin: 0 0 32px; padding: 18px 0 0; border-top: 1px solid rgba(40, 37, 37, .45); list-style: none; }
 .discipline-list li { font-size: .8rem; }
 .contact-links { display: flex; flex-wrap: wrap; gap: 10px 20px; }

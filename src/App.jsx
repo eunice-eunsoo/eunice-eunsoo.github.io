@@ -12,7 +12,8 @@ function App() {
         <IntroSection />
         <section className="selected-work" id="featured" aria-labelledby="selected-work-title">
           <div className="content-container">
-            <h2 className="section-heading" id="selected-work-title">Selected work</h2>
+            <h2 className="section-heading" id="selected-work-title">Chef's Specials</h2>
+            <p className = 'featured-project h3'> Three projects I'm especially proud of. </p>
             <div className="featured-grid">
               {featuredProjects.map((project) => (
                 <FeaturedProject key={project.id} project={project} />

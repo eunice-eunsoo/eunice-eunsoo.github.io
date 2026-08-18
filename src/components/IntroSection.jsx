@@ -7,13 +7,17 @@ function IntroSection() {
   return (
     <section className="intro" id="top">
       <div className="content-container intro-inner">
-        <div className="intro-art">
-          <img className="intro-image" src={introPic} alt="Eunice Lee" />
+        <div className="intro-copy">
+          <h1>Eunice Lee</h1>
+          <p className="intro-midsize">and what she's cooking...</p>
         </div>
 
         <div className="intro-copy">
-          <h1>Eunice Lee</h1>
-          <p className="intro-deck">A short placeholder introduction belongs here—an opening note about your point of view and the work you make.</p>
+          <p className='intro-deck'>Hi! Welcome to my kitchen, where I'm always cooking something up. (Sorry, I had to.)
+            <br/><br/>
+            Jokes aside, I'm a multimedia journalist interested in all things media, with occasional marketing projects on the side. I'm especially invested in data and interactives journalism, and I love thinking about newsroom products and how people actually experience the news.
+            <br/><br/>
+            I also just really love stories, whether that means listening to someone tell me theirs or finding one buried in a dataset. And I love making things too, from interactives and videos to whatever random creative idea I decide to try next.</p>
           <ul className="discipline-list" aria-label="Disciplines">
             {disciplines.map((discipline) => <li key={discipline}>{discipline}</li>)}
           </ul>
