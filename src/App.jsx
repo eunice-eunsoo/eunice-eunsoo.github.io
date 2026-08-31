@@ -1,12 +1,27 @@
+import { useRef, useState } from 'react'
 import './App.css'
 import Footer from './components/Footer'
 import IntroSection from './components/IntroSection'
 import FeaturedProject from './components/FeaturedProject'
+import FeaturedProjectModal from './components/FeaturedProjectModal'
 import ProjectArchive from './components/ProjectArchive'
 import { archiveProjects, featuredProjects } from './data/projects'
 import featuredTitle from './assets/featured.png'
 
 function App() {
+  const [selectedProject, setSelectedProject] = useState(null)
+  const projectTriggerRef = useRef(null)
+
+  const openProject = (project, trigger) => {
+    projectTriggerRef.current = trigger
+    setSelectedProject(project)
+  }
+
+  const closeProject = () => {
+    setSelectedProject(null)
+    requestAnimationFrame(() => projectTriggerRef.current?.focus())
+  }
+
   return (
     <div className="site-shell">
       <main>
@@ -23,7 +38,7 @@ function App() {
             <p className = 'featured-subtitle'> Three projects I'm especially proud of! </p>
             <div className="featured-grid">
               {featuredProjects.map((project) => (
-                <FeaturedProject key={project.id} project={project} />
+                <FeaturedProject key={project.id} project={project} onSelect={openProject} />
               ))}
             </div>
           </div>
@@ -31,6 +46,9 @@ function App() {
         <ProjectArchive projects={archiveProjects} />
       </main>
       <Footer />
+      {selectedProject && (
+        <FeaturedProjectModal project={selectedProject} onClosed={closeProject} />
+      )}
     </div>
   )
 }

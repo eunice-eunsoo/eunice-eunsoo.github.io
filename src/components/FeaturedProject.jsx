@@ -14,13 +14,17 @@ function ProjectVisual({ project }) {
   )
 }
 
-function FeaturedProject({ project }) {
+function FeaturedProject({ project, onSelect }) {
   return (
     <article className="featured-project">
-      <a className="project-visual-link" href={project.link} aria-label={`View ${project.title}`}>
-        <ProjectVisual project={project} />
-      </a>
-      <h3><a href={project.link}>{project.title}</a></h3>
+      <button
+        className="featured-project-trigger"
+        type="button"
+        aria-label={`Open details for ${project.title}`}
+        onClick={(event) => onSelect(project, event.currentTarget)}
+      />
+      <ProjectVisual project={project} />
+      <h3>{project.title}</h3>
       <p className="project-description">{project.description}</p>
       <ul className="tags" aria-label="Skills and tools">
         {project.tools.map((tool) => <li key={tool}>{tool}</li>)}
