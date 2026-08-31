@@ -1,6 +1,7 @@
 import { useState } from 'react'
+import fullMenuTitle from '../assets/full_menu.png'
 
-const filters = ['all', 'tools', 'data', 'print', 'video', 'photo']
+const filters = ['all', 'data', 'graphics', 'writing', 'video', 'photo']
 
 function FilterBar({ activeFilter, onChange }) {
   return (
@@ -25,7 +26,11 @@ function ProjectArchiveRow({ project, index }) {
       <div className="archive-copy">
         <h3><a href={project.link}>{project.title}</a></h3>
         <p>{project.description}</p>
-        <ul className="tags" aria-label="Skills and tools">{project.tools.map((tool) => <li key={tool}>{tool}</li>)}</ul>
+        <ul className="tags" aria-label="Skills and tools">
+          {project.tools.map((tool, toolIndex) => (
+            project.tools.indexOf(tool) === toolIndex ? <li key={tool}>{tool}</li> : null
+          ))}
+        </ul>
       </div>
     </article>
   )
@@ -33,14 +38,24 @@ function ProjectArchiveRow({ project, index }) {
 
 function ProjectArchive({ projects }) {
   const [activeFilter, setActiveFilter] = useState('all')
-  const visibleProjects = activeFilter === 'all' ? projects : projects.filter((project) => project.categories.includes(activeFilter))
+  const visibleProjects = projects.filter((project) => (
+    activeFilter === 'all' || project.categories.includes(activeFilter)
+  ))
 
   return (
     <section className="archive" id="archive">
       <div className="content-container">
         <div className="archive-heading">
-          <h2 className="section-heading">Full Menu</h2>
-          <p className='featured-project h3'>Everything else.</p>
+          <div className="archive-heading-copy">
+            <h2 className="section-heading">
+              <img
+                className="section-title-image section-title-image--archive"
+                src={fullMenuTitle}
+                alt="Full Menu"
+              />
+            </h2>
+            <p className="featured-subtitle">Everything else!</p>
+          </div>
           <FilterBar activeFilter={activeFilter} onChange={setActiveFilter} />
         </div>
         <div className="archive-list" aria-live="polite">
