@@ -7,6 +7,8 @@ import lnl2 from "../assets/lnl/lnl2.png";
 import lnl3 from "../assets/lnl/lnl3.png";
 import lnl4 from "../assets/lnl/lnl4.png";
 import rainTracker from "../assets/rainstory.png";
+import bidWar from "../assets/bidwar.png";
+import CCH from "../assets/CCH.png";
 import midwayBlitz from "../assets/midwayblitz.png";
 import holidayLights from "../assets/daily/holiday-lights.jpg";
 import groveGallery from "../assets/daily/grove-gallery.jpeg";
@@ -101,7 +103,7 @@ export const archiveProjects = [
     title:
       "Chicago police traffic stops plunge, again, but Black and Latino drivers still get pulled over far more",
     description:
-      "Wrote and analyzed a data-driven story on Chicago traffic stops, examining persistent racial disparities in who gets pulled over and how pretextual stops affect Black and Latino drivers.",
+      "Wrote a data-driven story on Chicago traffic stops by analyzing IDOT data and conducting original reporting, examining persistent racial disparities in who gets pulled over and how pretextual stops affect Black and Latino drivers.",
     categories: ["data", "writing"],
     tools: ["Chicago Public Media", "Excel"],
     image: stops,
@@ -129,37 +131,39 @@ export const archiveProjects = [
     link: "https://chicago.suntimes.com/immigration/2026/07/24/chaotic-crowded-chicago-immigration-mega-court-hearings-are-fueling-record-deportation-orders",
   },
   {
-    id: "archive-04",
-    title: "Archive Project Four",
-    description: "A short placeholder description for a photo-based project.",
-    categories: ["photo"],
-    tools: ["Photo", "Direction"],
-    image: null,
-    link: "#",
-  },
-  {
     id: "archive-05",
-    title: "Archive Project Five",
+    title:
+      "Cook County Health predicts charity care will soar to highest level in over a decade",
     description: "One sentence reserved for a data story or interactive piece.",
     categories: ["data", "graphics"],
     tools: ["Data", "Interactive"],
-    image: null,
-    link: "#",
+    image: CCH,
+    link: "https://www.wbez.org/health-medicine/2026/07/31/cook-county-predicts-charity-care-will-soar-to-highest-level-in-more-than-a-decade-medicaid-obamacare",
   },
   {
-    id: "archive-06",
-    title: "Archive Project Six",
-    description: "A final placeholder for work that crosses multiple formats.",
-    categories: ["writing", "photo"],
-    tools: ["Print", "Photo"],
-    image: null,
-    link: "#",
+    id: "archive-04",
+    title:
+      "Got cash? With few properties on sale, Chicago homebuyers are having bidding wars",
+    description: "Created graphics using Datawrapper.",
+    categories: ["graphics", "data"],
+    tools: ["Chicago Public Media", "Datawrapper"],
+    image: bidWar,
+    link: "https://chicago.suntimes.com/real-estate/2026/08/01/cash-properties-sale-open-house-chicago-homebuyers-bidding-wars",
   },
+  // {
+  //   id: "archive-06",
+  //   title: "Archive Project Six",
+  //   description: "A final placeholder for work that crosses multiple formats.",
+  //   categories: ["writing", "photo"],
+  //   tools: ["Print", "Photo"],
+  //   image: null,
+  //   link: "#",
+  // },
   {
     id: "archive-07",
     title:
       "Make your spirits bright with these holiday light events in the Chicago area",
-    description: "ADD DESCRIPTION",
+    description: null,
     categories: ["writing", "graphics"],
     tools: ["The Daily Northwestern", "Reporting", "StoryMapJS"],
     image: holidayLights,
@@ -169,7 +173,7 @@ export const archiveProjects = [
     id: "archive-08",
     title:
       "Grove Gallery wraps up 'Portraits with Impact,' hoping to focus on community, diversity",
-    description: "ADD DESCRIPTION",
+    description: null,
     categories: ["writing"],
     tools: ["The Daily Northwestern", "Reporting"],
     image: groveGallery,
@@ -178,7 +182,7 @@ export const archiveProjects = [
   {
     id: "archive-09",
     title: "Poll: Love on campus, in numbers",
-    description: "ADD DESCRIPTION",
+    description: null,
     categories: ["data", "writing"],
     tools: ["The Daily Northwestern", "Reporting", "Python"],
     image: loveOnCampus,
@@ -187,7 +191,7 @@ export const archiveProjects = [
   {
     id: "archive-10",
     title: "Fusion celebrates 21st birthday with its annual spring show",
-    description: "ADD DESCRIPTION",
+    description: null,
     categories: ["writing"],
     tools: ["The Daily Northwestern", "Reporting"],
     image: fusionDance,
@@ -197,7 +201,7 @@ export const archiveProjects = [
     id: "archive-11",
     title:
       "Student composed music drama 'Pythia' explores the history of the Oracle of Delphi",
-    description: "ADD DESCRIPTION",
+    description: null,
     categories: ["writing"],
     tools: ["The Daily Northwestern", "Reporting"],
     image: pythia,
@@ -207,7 +211,8 @@ export const archiveProjects = [
     id: "archive-12",
     title:
       "The Weekly: Federal data deletions, Workers' Retention Ordinance, R. F. Kuang",
-    description: "ADD DESCRIPTION",
+    description:
+      "Spoke on The Weekly, The Daily Northwestern's news podcast, about my reporting on how federal data deletions were affecting Northwestern researchers.",
     categories: ["writing"],
     tools: ["The Daily Northwestern", "Reporting"],
     image: theWeekly,
@@ -227,7 +232,7 @@ export const archiveProjects = [
     id: "archive-14",
     title:
       "Best All-Around and Brunch: Ovo Frito Café delivers tasty brunch favorites",
-    description: "ADD DESCRIPTION",
+    description: null,
     categories: ["writing"],
     tools: ["The Daily Northwestern", "Reporting"],
     image: ovoFrito,
@@ -237,7 +242,7 @@ export const archiveProjects = [
     id: "archive-15",
     title:
       "Best of Evanston: NU faculty share their favorite restaurants in downtown Evanston",
-    description: "ADD DESCRIPTION",
+    description: null,
     categories: ["writing"],
     tools: ["The Daily Northwestern", "Reporting"],
     image: facultyRestaurants,
@@ -247,7 +252,7 @@ export const archiveProjects = [
     id: "archive-16",
     title:
       "Sparks fly: NU students make matches for one another to celebrate Valentine's Day",
-    description: "ADD DESCRIPTION",
+    description: null,
     categories: ["writing"],
     tools: ["The Daily Northwestern", "Reporting"],
     image: valentinesMatchmaking,
@@ -257,7 +262,7 @@ export const archiveProjects = [
     id: "archive-17",
     title:
       "Prof. Michelle Birkett presents findings on social causes of HIV prevalence at colloquium",
-    description: "ADD DESCRIPTION",
+    description: null,
     categories: ["writing"],
     tools: ["The Daily Northwestern", "Reporting"],
     image: michelleBirkett,
@@ -267,7 +272,7 @@ export const archiveProjects = [
     id: "archive-18",
     title:
       "Bienen senior Emily Amesquita wins encouragement award at Laffont Competition, eyes opera career",
-    description: "ADD DESCRIPTION",
+    description: null,
     categories: ["writing"],
     tools: ["The Daily Northwestern", "Reporting"],
     image: emilyAmesquita,
@@ -277,7 +282,8 @@ export const archiveProjects = [
     id: "archive-19",
     title:
       "Graffoniks marks 10th anniversary with 'Graffoniks is Out of This World'",
-    description: "ADD DESCRIPTION",
+    description:
+      "Wrote and photographed a story on Graffoniks' 10th anniversary showcase.",
     categories: ["writing", "photo"],
     tools: ["The Daily Northwestern", "Reporting"],
     image: graffoniks,
