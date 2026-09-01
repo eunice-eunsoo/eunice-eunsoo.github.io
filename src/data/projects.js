@@ -136,7 +136,7 @@ export const archiveProjects = [
       "Cook County Health predicts charity care will soar to highest level in over a decade",
     description: "One sentence reserved for a data story or interactive piece.",
     categories: ["data", "graphics"],
-    tools: ["Data", "Interactive"],
+    tools: ["Chicago Public Media", "Datawrapper"],
     image: CCH,
     link: "https://www.wbez.org/health-medicine/2026/07/31/cook-county-predicts-charity-care-will-soar-to-highest-level-in-more-than-a-decade-medicaid-obamacare",
   },
