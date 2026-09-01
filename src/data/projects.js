@@ -23,6 +23,7 @@ import valentinesMatchmaking from "../assets/daily/valentines-matchmaking.jpg";
 import michelleBirkett from "../assets/daily/michelle-birkett.jpeg";
 import emilyAmesquita from "../assets/daily/emily-amesquita.jpeg";
 import graffoniks from "../assets/daily/graffoniks.jpg";
+import danceworks from "../assets/daily/danceworks.png";
 
 export const featuredProjects = [
   {
@@ -249,6 +250,16 @@ export const archiveProjects = [
     link: "https://dailynorthwestern.com/2025/02/19/featured-stories/best-of-evanston/best-of-evanston-2025/best-of-evanston-nu-faculty-share-their-favorite-restaurants-in-downtown-evanston/",
   },
   {
+    id: "archive-20",
+    title:
+      "'Danceworks 2025' presents cohesive narrative with 'signal::transfer'",
+    description: "Photographed Danceworks 2025",
+    categories: ["photo"],
+    tools: ["The Daily Northwestern", "Photography"],
+    image: danceworks,
+    link: "https://dailynorthwestern.com/2025/03/11/ae/danceworks-2025-presents-cohesive-narrative-with-signaltransfer/",
+  },
+  {
     id: "archive-16",
     title:
       "Sparks fly: NU students make matches for one another to celebrate Valentine's Day",
@@ -285,7 +296,7 @@ export const archiveProjects = [
     description:
       "Wrote and photographed a story on Graffoniks' 10th anniversary showcase.",
     categories: ["writing", "photo"],
-    tools: ["The Daily Northwestern", "Reporting"],
+    tools: ["The Daily Northwestern", "Reporting", "Photography"],
     image: graffoniks,
     link: "https://dailynorthwestern.com/2025/01/26/ae/graffoniks-marks-10th-anniversary-with-graffoniks-is-out-of-this-world/",
   },
