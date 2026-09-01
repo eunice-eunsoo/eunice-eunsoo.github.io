@@ -7,7 +7,7 @@
 .intro-image { display: block; width: 100%; height: auto; }
 .intro-copy { max-width: 500px; }
 .intro-design { position: relative; isolation: isolate; width: 100%; justify-self: center; transform: translateY(-50px); }
-.intro-person { position: absolute; z-index: -1; width: 250px; height: auto; left: 850px; top: -70%; transform: translateY(-30%); }
+.intro-person { position: absolute; z-index: -1; width: 250px; height: auto; left: 820px; top: -137%; transform: rotate(42deg);clip-path: inset(0 0 40px 0);}
 .intro-food { position: absolute; z-index: -1; width: 300px; height: auto; left: 22px; top: 78%; }
 .intro-text { width: 100%; max-width: 480px; justify-self: start; text-align: left; transform: translateY(40px); }
 .intro h1 { margin: 0 0 22px; font: 400 clamp(2.75rem, 5vw, 4.5rem)/1 var(--serif); letter-spacing: -.045em; }
