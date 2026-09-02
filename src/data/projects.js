@@ -59,7 +59,7 @@ export const featuredProjects = [
     description:
       "Led The Daily Northwestern's Fall 2025 campus poll, collecting student perspectives on issues both on and off campus, cleaning and analyzing the data, and shaping the results into a cohesive feature on how Northwestern students viewed their community and the issues affecting it.",
     categories: ["Placeholder category"],
-    role: "Polling desk assistnat",
+    role: "Polling desk assistant",
     detailIntro:
       "The Fall 2025 Campus Poll set out to answer a simple question: what is the Northwestern experience? At the polling desk of The Daily Northwestern, I designed and analyzed a campus-wide survey examining how students navigate politics alongside everyday realities like relationships, mental health, academic pressure and financial stress.",
     detailSections: [
