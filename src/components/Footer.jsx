@@ -4,7 +4,12 @@ function Footer() {
       <div className="content-container">
         <div className="footer-main">
           <p>You made it to the bottom! thank youuu</p>
-          <a style={{ fontSize: "1rem" }} href="https://drive.google.com/file/d/1PBCGJkdMvfn0kMQJ_g3868qMX6mgxMij/view?usp=sharing">
+          <a
+            style={{ fontSize: "1rem" }}
+            href="/Resume (Last update 090126).pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {" "}
             My Resume ↗
           </a>

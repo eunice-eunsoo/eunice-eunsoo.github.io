@@ -1,12 +1,14 @@
 import newsLensGif from "../assets/newslens.gif";
 import dailyPoll from "../assets/dailypoll.png";
-import documentary from "../assets/documentary.png";
+import documentary from "../assets/documentary.jpg";
 import stops from "../assets/traffic stops 0814.webp";
 import lnl1 from "../assets/lnl/lnl1.png";
 import lnl2 from "../assets/lnl/lnl2.png";
 import lnl3 from "../assets/lnl/lnl3.png";
 import lnl4 from "../assets/lnl/lnl4.png";
 import rainTracker from "../assets/rainstory.png";
+import encoreEvanston from "../assets/encoreevanston.png";
+import co2029 from "../assets/co2029.png";
 import bidWar from "../assets/bidwar.png";
 import CCH from "../assets/CCH.png";
 import midwayBlitz from "../assets/midwayblitz.png";
@@ -135,7 +137,7 @@ export const archiveProjects = [
     id: "archive-05",
     title:
       "Cook County Health predicts charity care will soar to highest level in over a decade",
-    description: "One sentence reserved for a data story or interactive piece.",
+    description: "Created graphics using Datawrapper.",
     categories: ["data", "graphics"],
     tools: ["Chicago Public Media", "Datawrapper"],
     image: CCH,
@@ -161,10 +163,62 @@ export const archiveProjects = [
   //   link: "#",
   // },
   {
+    id: "archive-13",
+    title:
+      "Data removal from government websites concerning scientists, including NU researchers",
+    description: null,
+    categories: ["writing", "data"],
+    tools: ["The Daily Northwestern", "Reporting"],
+    image: federalDataRemoval,
+    link: "https://dailynorthwestern.com/2025/02/27/campus/data-removal-from-government-websites-concerning-scientists-including-nu-researchers/",
+  },
+  {
+    id: "archive-19",
+    title:
+      "Graffoniks marks 10th anniversary with 'Graffoniks is Out of This World'",
+    description:
+      "Wrote and photographed a story on Graffoniks' 10th anniversary showcase.",
+    categories: ["writing", "photo"],
+    tools: ["The Daily Northwestern", "Reporting", "Photography"],
+    image: graffoniks,
+    link: "https://dailynorthwestern.com/2025/01/26/ae/graffoniks-marks-10th-anniversary-with-graffoniks-is-out-of-this-world/",
+  },
+  {
+    id: "archive-09",
+    title: "Poll: Love on campus, in numbers",
+    description: null,
+    categories: ["data", "writing"],
+    tools: ["The Daily Northwestern", "Reporting", "Python"],
+    image: loveOnCampus,
+    link: "https://dailynorthwestern.com/2025/05/07/campus/poll-romantic-relationships/",
+  },
+  {
+    id: "archive-21",
+    title: "Encore! Evanston",
+    description:
+      "Filmed and produced a news package on Encore! Evanston, a collaboration between Likhaya and Downtown Evanston that brought live music performances to local restaurants and bars.",
+    categories: ["video"],
+    tools: ["Medill School of Journalism", "Adobe Premiere Pro", "Reporting"],
+    image: encoreEvanston,
+    link: "https://www.youtube.com/watch?v=5x0Asbbxol4",
+  },
+  {
+    id: "archive-22",
+    title:
+      "The Daily visits Norris University Center to speak with admitted students",
+    description:
+      "Short-form video for the Daily Northwestern's social media on admitted students' day.",
+    categories: ["video"],
+    tools: ["The Daily Northwestern", "Adobe Premiere Pro", "Reporting"],
+    image: co2029,
+    link: "https://www.instagram.com/reels/DJUrQJWNBWR/",
+  },
+  {
     id: "archive-07",
     title:
       "Make your spirits bright with these holiday light events in the Chicago area",
-    description: null,
+    description:
+      "Wrote a service story on holiday lights and added an interactive component using StoryMapJS.",
     categories: ["writing", "graphics"],
     tools: ["The Daily Northwestern", "Reporting", "StoryMapJS"],
     image: holidayLights,
@@ -179,15 +233,6 @@ export const archiveProjects = [
     tools: ["The Daily Northwestern", "Reporting"],
     image: groveGallery,
     link: "https://dailynorthwestern.com/2025/06/29/ae/grove-gallery-wraps-up-portraits-with-impact-hoping-to-focus-on-community-diversity/",
-  },
-  {
-    id: "archive-09",
-    title: "Poll: Love on campus, in numbers",
-    description: null,
-    categories: ["data", "writing"],
-    tools: ["The Daily Northwestern", "Reporting", "Python"],
-    image: loveOnCampus,
-    link: "https://dailynorthwestern.com/2025/05/07/campus/poll-romantic-relationships/",
   },
   {
     id: "archive-10",
@@ -219,16 +264,7 @@ export const archiveProjects = [
     image: theWeekly,
     link: "https://dailynorthwestern.com/2025/03/03/audio/the-weekly-federal-data-deletions-workers-retention-ordinance-r-f-kuang/",
   },
-  {
-    id: "archive-13",
-    title:
-      "Data removal from government websites concerning scientists, including NU researchers",
-    description: "ADD DESCRIPTION",
-    categories: ["writing", "data"],
-    tools: ["The Daily Northwestern", "Reporting"],
-    image: federalDataRemoval,
-    link: "https://dailynorthwestern.com/2025/02/27/campus/data-removal-from-government-websites-concerning-scientists-including-nu-researchers/",
-  },
+
   {
     id: "archive-14",
     title:
@@ -288,16 +324,5 @@ export const archiveProjects = [
     tools: ["The Daily Northwestern", "Reporting"],
     image: emilyAmesquita,
     link: "https://dailynorthwestern.com/2025/02/02/ae/bienen-senior-emily-amesquita-wins-encouragement-award-at-laffont-competition-eyes-opera-career/",
-  },
-  {
-    id: "archive-19",
-    title:
-      "Graffoniks marks 10th anniversary with 'Graffoniks is Out of This World'",
-    description:
-      "Wrote and photographed a story on Graffoniks' 10th anniversary showcase.",
-    categories: ["writing", "photo"],
-    tools: ["The Daily Northwestern", "Reporting", "Photography"],
-    image: graffoniks,
-    link: "https://dailynorthwestern.com/2025/01/26/ae/graffoniks-marks-10th-anniversary-with-graffoniks-is-out-of-this-world/",
   },
 ];
