@@ -26,6 +26,9 @@ import michelleBirkett from "../assets/daily/michelle-birkett.jpeg";
 import emilyAmesquita from "../assets/daily/emily-amesquita.jpeg";
 import graffoniks from "../assets/daily/graffoniks.jpg";
 import danceworks from "../assets/daily/danceworks.png";
+import diml from "../assets/Archives/diml.png";
+import coolingord from "../assets/Archives/coolingord.png";
+import incarcerated from "../assets/Archives/incarcerated.png";
 
 export const featuredProjects = [
   {
@@ -106,11 +109,22 @@ export const archiveProjects = [
     title:
       "Chicago police traffic stops plunge, again, but Black and Latino drivers still get pulled over far more",
     description:
-      "Wrote a data-driven story on Chicago traffic stops by analyzing IDOT data and conducting original reporting, examining persistent racial disparities in who gets pulled over and how pretextual stops affect Black and Latino drivers.",
+      "Reported on Chicago traffic stops by analyzing IDOT data and conducting original reporting, examining persistent racial disparities in who gets pulled over and how pretextual stops affect Black and Latino drivers.",
     categories: ["data", "writing"],
-    tools: ["Chicago Public Media", "Excel"],
+    tools: ["Chicago Public Media", "Excel", "Reporting"],
     image: stops,
     link: "https://chicago.suntimes.com/the-watchdogs/2026/08/14/traffic-stops-racial-disparities-chicago-police-department-illinois-department-transportation-driving-while-black",
+  },
+  {
+    id: "archive-23",
+    title:
+      "Historic South Side building is the first to violate Chicago's cooling ordinance this year",
+    description:
+      "Reported on Chicago's cooling ordinance, investigating building compliance and the city's enforcement of the law.",
+    categories: ["writing", "data"],
+    tools: ["Chicago Public Media", "Reporting"],
+    image: coolingord,
+    link: "https://chicago.suntimes.com/health/2026/09/16/chicago-heatwave-cooling-ordinance-violation-air-conditioning-heat-related-death",
   },
   {
     id: "archive-02",
@@ -121,7 +135,7 @@ export const archiveProjects = [
     categories: ["writing"],
     tools: ["The Dallas Morning News", "Reporting"],
     image: rainTracker,
-    link: "https://www.dallasnews.com/projects/2026/dallas-rain-tracker-texas/",
+    link: "https://www.dallasnews.com/projects/2026/dallas-rain-tracker-texas/?fromRichie=1",
   },
   {
     id: "archive-03",
@@ -144,6 +158,17 @@ export const archiveProjects = [
     link: "https://www.wbez.org/health-medicine/2026/07/31/cook-county-predicts-charity-care-will-soar-to-highest-level-in-more-than-a-decade-medicaid-obamacare",
   },
   {
+    id: "archive-13",
+    title:
+      "Data removal from government websites concerning scientists, including NU researchers",
+    description:
+      "Reported on the removal of federal datasets and how disappearing government data affected Northwestern researchers.",
+    categories: ["writing", "data"],
+    tools: ["The Daily Northwestern", "Reporting"],
+    image: federalDataRemoval,
+    link: "https://dailynorthwestern.com/2025/02/27/campus/data-removal-from-government-websites-concerning-scientists-including-nu-researchers/",
+  },
+  {
     id: "archive-04",
     title:
       "Got cash? With few properties on sale, Chicago homebuyers are having bidding wars",
@@ -153,35 +178,37 @@ export const archiveProjects = [
     image: bidWar,
     link: "https://chicago.suntimes.com/real-estate/2026/08/01/cash-properties-sale-open-house-chicago-homebuyers-bidding-wars",
   },
-  // {
-  //   id: "archive-06",
-  //   title: "Archive Project Six",
-  //   description: "A final placeholder for work that crosses multiple formats.",
-  //   categories: ["writing", "photo"],
-  //   tools: ["Print", "Photo"],
-  //   image: null,
-  //   link: "#",
-  // },
   {
-    id: "archive-13",
+    id: "archive-24",
     title:
-      "Data removal from government websites concerning scientists, including NU researchers",
-    description: null,
-    categories: ["writing", "data"],
-    tools: ["The Daily Northwestern", "Reporting"],
-    image: federalDataRemoval,
-    link: "https://dailynorthwestern.com/2025/02/27/campus/data-removal-from-government-websites-concerning-scientists-including-nu-researchers/",
+      "The formerly incarcerated turn to services to navigate reentry barriers",
+    description:
+      "Reported on the barriers formerly incarcerated people face during reentry and the organizations helping them navigate those challenges.",
+    categories: ["writing"],
+    tools: ["Medill School of Journalism", "Reporting"],
+    image: incarcerated,
+    link: "https://www.medilltrialmonitors.com/p/copy-the-formerly-incarcerated-turn",
   },
   {
     id: "archive-19",
     title:
       "Graffoniks marks 10th anniversary with 'Graffoniks is Out of This World'",
     description:
-      "Wrote and photographed a story on Graffoniks' 10th anniversary showcase.",
+      "Reported on a story on Graffoniks' 10th anniversary showcase.",
     categories: ["writing", "photo"],
     tools: ["The Daily Northwestern", "Reporting", "Photography"],
     image: graffoniks,
     link: "https://dailynorthwestern.com/2025/01/26/ae/graffoniks-marks-10th-anniversary-with-graffoniks-is-out-of-this-world/",
+  },
+  {
+    id: "archive-06",
+    title: "A Day In My Life",
+    description:
+      "Filmed and edited a short form day in my life video for Northwestern Admissions.",
+    categories: ["video"],
+    tools: ["Northwestern Admissions", "Adobe Premiere Pro", "Capcut"],
+    image: diml,
+    link: "https://www.instagram.com/reel/DdZSKI8Teqi/?utm_source=ig_web_copy_link&stkn=MzRlODBiNWFlZA==",
   },
   {
     id: "archive-09",

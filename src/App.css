@@ -65,6 +65,11 @@
 .archive-copy h3 a { text-decoration: none; }
 .archive-copy > p { max-width: 700px; margin: 0; font-size: .8rem; line-height: 1.45; }
 .archive-copy .tags { margin-top: 9px; }
+.archive-pagination { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; max-width: 990px; margin: 22px auto 0; padding-top: 14px; border-top: 1px solid rgba(40, 37, 37, .35); }
+.archive-pagination-pages { display: flex; grid-column: 2; grid-row: 1; align-items: center; justify-content: center; gap: 14px; }
+.archive-pagination button { min-width: 24px; padding: 3px 0; border: 0; border-bottom: 1px solid transparent; background: transparent; color: var(--charcoal); font: inherit; font-size: .75rem; letter-spacing: .06em; text-transform: uppercase; cursor: pointer; }
+.archive-pagination button:hover, .archive-pagination button:focus-visible, .archive-pagination button.is-active { border-bottom-color: var(--charcoal); }
+.archive-pagination button.is-active { font-weight: 600; }
 
 .project-modal-backdrop { --project-modal-speed: 320ms; position: fixed; z-index: 1000; inset: 0; display: grid; place-items: center; padding: clamp(16px, 4vw, 42px); background: rgba(40, 37, 37, .42); animation: project-backdrop-in var(--project-modal-speed) ease both; }
 .project-modal-backdrop.is-closing { animation: project-backdrop-out var(--project-modal-speed) ease both; }
@@ -156,6 +161,9 @@ a:hover { opacity: .62; }
   .featured-grid { grid-template-columns: 1fr; gap: 40px; }
   .archive-row { grid-template-columns: 110px minmax(0, 1fr); gap: 16px; }
   .archive-thumb { width: 110px; }
+  .archive-pagination { grid-template-columns: minmax(68px, 1fr) auto minmax(68px, 1fr); gap: 8px; }
+  .archive-pagination-pages { gap: 10px; }
+  .archive-pagination button { font-size: .68rem; }
   .footer-main, .footer-bottom { align-items: flex-start; flex-direction: column; }
 }
 

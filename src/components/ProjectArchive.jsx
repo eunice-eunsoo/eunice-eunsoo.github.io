@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import fullMenuTitle from "../assets/full_menu.png";
 
 const filters = ["all", "data", "graphics", "writing", "video", "photo"];
+const projectsPerPage = 10;
 
 function FilterBar({ activeFilter, onChange }) {
   return (
@@ -57,10 +58,35 @@ function ProjectArchiveRow({ project, index }) {
 
 function ProjectArchive({ projects }) {
   const [activeFilter, setActiveFilter] = useState("all");
+  const [currentPage, setCurrentPage] = useState(1);
+  const archiveListRef = useRef(null);
   const visibleProjects = projects.filter(
     (project) =>
       activeFilter === "all" || project.categories.includes(activeFilter)
   );
+  const pageCount = Math.ceil(visibleProjects.length / projectsPerPage);
+  const pageStart = (currentPage - 1) * projectsPerPage;
+  const paginatedProjects = visibleProjects.slice(
+    pageStart,
+    pageStart + projectsPerPage
+  );
+
+  const changeFilter = (filter) => {
+    setActiveFilter(filter);
+    setCurrentPage(1);
+  };
+
+  const changePage = (page) => {
+    setCurrentPage(page);
+    requestAnimationFrame(() => {
+      archiveListRef.current?.scrollIntoView({
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+          ? "auto"
+          : "smooth",
+        block: "start",
+      });
+    });
+  };
 
   return (
     <section className="archive" id="archive">
@@ -76,17 +102,39 @@ function ProjectArchive({ projects }) {
             </h2>
             <p className="featured-subtitle">Everything else!</p>
           </div>
-          <FilterBar activeFilter={activeFilter} onChange={setActiveFilter} />
+          <FilterBar activeFilter={activeFilter} onChange={changeFilter} />
         </div>
-        <div className="archive-list" aria-live="polite">
-          {visibleProjects.map((project, index) => (
+        <div className="archive-list" aria-live="polite" ref={archiveListRef}>
+          {paginatedProjects.map((project, index) => (
             <ProjectArchiveRow
               project={project}
-              index={index}
+              index={pageStart + index}
               key={project.id}
             />
           ))}
         </div>
+        {pageCount > 1 && (
+          <nav className="archive-pagination" aria-label="Full Menu pages">
+            <div className="archive-pagination-pages">
+              {Array.from({ length: pageCount }, (_, index) => {
+                const page = index + 1;
+
+                return (
+                  <button
+                    type="button"
+                    className={currentPage === page ? "is-active" : ""}
+                    aria-current={currentPage === page ? "page" : undefined}
+                    aria-label={`Page ${page}`}
+                    onClick={() => changePage(page)}
+                    key={page}
+                  >
+                    {page}
+                  </button>
+                );
+              })}
+            </div>
+          </nav>
+        )}
       </div>
     </section>
   );
