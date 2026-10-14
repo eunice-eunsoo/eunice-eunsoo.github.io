@@ -30,6 +30,7 @@ import diml from "../assets/Archives/diml.png";
 import coolingord from "../assets/Archives/coolingord.png";
 import incarcerated from "../assets/Archives/incarcerated.png";
 import jonestour from "../assets/Archives/jonestour.png";
+import tippytype from "../assets/Archives/tippytype.png";
 
 export const featuredProjects = [
   {
@@ -261,6 +262,16 @@ export const archiveProjects = [
     tools: ["Northwestern Admissions", "Adobe Premiere Pro"],
     image: jonestour,
     link: "https://www.youtube.com/watch?v=eXIbdOg_oFU",
+  },
+  {
+    id: "archive-26",
+    title: "Tippy Type summer promotion video",
+    description:
+      "Filmed and edited a promotional video for tippy type, generating 90K+ combined views across Instagram and TikTok.",
+    categories: ["video"],
+    tools: ["tippy type", "Adobe Premiere Pro"],
+    image: tippytype,
+    link: "https://www.tiktok.com/@tippytype/video/7537774729877409037",
   },
   {
     id: "archive-08",
