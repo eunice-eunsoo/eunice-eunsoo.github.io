@@ -6,12 +6,12 @@ function Footer() {
           <p>You made it to the bottom! thank youuu</p>
           <a
             style={{ fontSize: "1rem" }}
-            href="/Resume (Last update 090126).pdf"
+            href="/Resume 1013.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
             {" "}
-            My Resume ↗
+            Link to resume
           </a>
         </div>
         <div className="footer-content">

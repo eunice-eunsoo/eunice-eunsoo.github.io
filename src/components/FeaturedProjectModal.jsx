@@ -125,7 +125,7 @@ function FeaturedProjectModal({ project, onClosed }) {
             ))}
             {project.link && project.link !== '#' && (
               <a className="project-modal-link" href={project.link} target="_blank" rel="noreferrer">
-                View project ↗
+                View project
               </a>
             )}
           </div>

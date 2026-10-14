@@ -29,6 +29,7 @@ import danceworks from "../assets/daily/danceworks.png";
 import diml from "../assets/Archives/diml.png";
 import coolingord from "../assets/Archives/coolingord.png";
 import incarcerated from "../assets/Archives/incarcerated.png";
+import jonestour from "../assets/Archives/jonestour.png";
 
 export const featuredProjects = [
   {
@@ -250,6 +251,16 @@ export const archiveProjects = [
     tools: ["The Daily Northwestern", "Reporting", "StoryMapJS"],
     image: holidayLights,
     link: "https://dailynorthwestern.com/2025/12/03/lateststories/make-your-spirits-bright-with-these-holiday-light-events-in-the-chicago-area/",
+  },
+  {
+    id: "archive-25",
+    title: "Dorm Tour Shorts: Jones Hall",
+    description:
+      "Filmed and edited a dorm tour video for Northwestern Admission's Youtube channel.",
+    categories: ["video"],
+    tools: ["Northwestern Admissions", "Adobe Premiere Pro"],
+    image: jonestour,
+    link: "https://www.youtube.com/watch?v=eXIbdOg_oFU",
   },
   {
     id: "archive-08",
